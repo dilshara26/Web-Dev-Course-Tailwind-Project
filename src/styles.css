@@ -1,0 +1,9 @@
+body{
+    font-family: "Montserrat", sans-serif;
+}
+
+
+.hero-div{
+    background-image: url("./../assets/hero-background.png");
+    background-size: cover;
+}
