@@ -1,9 +1,8 @@
-body{
+body {
     font-family: "Montserrat", sans-serif;
 }
 
-
-.hero-div{
-    background-image: url("./../assets/hero-background.png");
+.hero-div {
+    background-image: url("./../assets/hero-background.jpeg");
     background-size: cover;
 }
