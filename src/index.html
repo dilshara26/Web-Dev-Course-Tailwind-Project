@@ -1,72 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./styles.css" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <title>Tailwind</title>
-  </head>
-  <body>
-    <section class="px-32 py-24">
-      <div class="rounded-lg flex flex-col justify-center px-36 py-36 hero-div">
-        <h1
-          class="text-6xl text-[#F6F5F5] opacity-80 text-center font-black my-8"
-        >
-          Take Control of your
-          <span class="text-[#C6D3FE]"> Customer Support </span>
-        </h1>
-        <p class="text-center my-2 text-[#C6D3FE]">
-          Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem
-          cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat
-          aliqua.
-        </p>
-        <div class="text-center my-6">
-          <button
-            class="px-8 py-3 text-base font-medium rounded-md bg-white text-indigo-500 mr-6"
-          >
-            Live Demo
-          </button>
-          <button
-            class="px-8 py-3 text-base text-white font-medium rounded-md bg-indigo-500 bg-opacity-60"
-          >
-            Visit Us
-          </button>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="./styles.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Tailwind</title>
+</head>
+
+<body class="overflow-x-hidden">
+  <nav class="px-32 flex items-center justify-between py-8">
+    <a href="#">
+      <span class="sr-only">Workflow</span>
+      <img class="h-8 w-auto sm:h-10" src="https://tailwindui.com/img/logos/workflow-mark-purple-600-to-indigo-600.svg"
+        alt="" />
+    </a>
+    <div class="flex items-center justify-between gap-x-8 ml-32">
+      <a href="/" class="text-base font-semibold text-gray-500 hover:text-gray-900">Home</a>
+      <a href="/" class="text-base font-semibold text-gray-500 hover:text-gray-900">Pricing</a>
+      <a href="/" class="text-base font-semibold text-gray-500 hover:text-gray-900">Partners</a>
+      <a href="/" class="text-base font-semibold text-gray-500 hover:text-gray-900">Company</a>
+    </div>
+    <div class="flex items-center gap-x-8">
+      <a href="/" class="text-base font-semibold text-gray-500 hover:text-gray-900 block">Sign In</a>
+      <button class="text-white px-4 py-2 rounded font-semibold bg-gradient-to-r from-purple-600 to-indigo-600">Sign
+        Up</button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="px-32 pb-16 py-4">
+    <div class="rounded-lg flex flex-col justify-center px-36 py-20 hero-div">
+      <h1 class="text-6xl text-[#F6F5F5] opacity-80 text-center font-black my-8">
+        Take Control of your
+        <span class="text-[#C6D3FE]"> Customer Support </span>
+      </h1>
+      <p class="text-center my-2 text-[#C6D3FE]">
+        Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem
+        cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat
+        aliqua.
+      </p>
+      <div class="text-center my-6">
+        <button class="px-8 py-3 text-base font-semibold rounded-md bg-white text-indigo-500 mr-6">
+          Get Started
+        </button>
+        <button class="px-8 py-3 text-base text-white font-semibold rounded-md bg-indigo-500 bg-opacity-60">
+          Live Demo
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trusted By Section -->
+  <section class="px-32 py-4">
+    <h5 class="text-sm font-semibold text-[#6b7280] text-center">TRUSTED BY OVER 5 VERY AVERAGE SMALL BUSINESSES</h5>
+    <div class="flex items-center justify-center gap-x-16 mt-8">
+      <img class="h-12" src="https://tailwindui.com/img/logos/tuple-logo-gray-400.svg" alt="Tuple" />
+      <img class="h-12" src="https://tailwindui.com/img/logos/mirage-logo-gray-400.svg" alt="Mirage" />
+      <img class="h-12" src="https://tailwindui.com/img/logos/statickit-logo-gray-400.svg" alt="StaticKit" />
+      <img class="h-12" src="https://tailwindui.com/img/logos/transistor-logo-gray-400.svg" alt="Transistor" />
+      <img class="h-12" src="https://tailwindui.com/img/logos/workcation-logo-gray-400.svg" alt="Workcation" />
+    </div>
+  </section>
+
+  <!-- Customer Support Section -->
+  <section class="pl-32 py-24 grid grid-cols-2 gap-x-32">
+    <div>
+      <div>
+        <span
+          class="h-12 w-12 rounded-md flex items-center justify-center bg-gradient-to-r from-purple-600 to-indigo-600">
+          <!-- Heroicon name: outline/inbox -->
+          <svg class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M20 13V6a2 2 0 00-2-2H6a2 2 0 00-2 2v7m16 0v5a2 2 0 01-2 2H6a2 2 0 01-2-2v-5m16 0h-2.586a1 1 0 00-.707.293l-2.414 2.414a1 1 0 01-.707.293h-3.172a1 1 0 01-.707-.293l-2.414-2.414A1 1 0 006.586 13H4" />
+          </svg>
+        </span>
+        <h2 class="text-3xl font-extrabold mt-6">Stay on top of customer support</h2>
+        <p class="font-lg text-[#6b7280] font-medium mt-4">Semper curabitur ullamcorper posuere nunc sed. Ornare iaculis
+          bibendum malesuada faucibus lacinia porttitor.
+          Pulvinar laoreet sagittis viverra duis. In venenatis sem arcu pretium pharetra at. Lectus viverra dui tellus
+          ornare pharetra.</p>
+        <button
+          class="text-white mt-6 px-4 py-2 rounded font-semibold bg-gradient-to-r from-purple-600 to-indigo-600">Get
+          Started</button>
+      </div>
+      <div>
+        <hr class="mt-6">
+        <p class="text-[#6b7280] mt-6 font-medium">“Cras velit quis eros eget rhoncus lacus ultrices sed diam. Sit orci
+          risus aenean
+          curabitur donec aliquet. Mi
+          venenatis in euismod ut.”</p>
+        <div class="flex items-center mt-2 gap-x-4">
+          <img class="h-6 w-6 rounded-full"
+            src="https://images.unsplash.com/photo-1509783236416-c9ad59bae472?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80"
+            alt="" />
+          <span class="font-semibold">Marcia Hill, Digital Marketing Manager</span>
         </div>
       </div>
-    </section>
-    <section class="grid grid-cols-2 py-48 rounded">
-      <div class="border-red-500 border-2 ps-32 pt-32 pb-20">
-        <div class="w-min">
-          <span class="">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="64"
-              height="64"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="white"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="lucide lucide-mail-check py-4 rounded bg-gradient-to-r from-purple-600 to-indigo-600"
-            >
-              <path
-                d="M22 13V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v12c0 1.1.9 2 2 2h8"
-              />
-              <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
-              <path d="m16 19 2 2 4-4" />
-            </svg>
-          </span>
-        </div>
-      </div>
-      <div class="border-red-500 border-2 ">hello</div>
-    </section>
-  </body>
+    </div>
+    <div>
+      <img src="./../assets/inbox.jpg" alt="" class="rounded-lg scale-150 relative left-16 top-14">
+    </div>
+  </section>
+
+  <section class="py-24">
+
+  </section>
+
+</body>
+
 </html>
